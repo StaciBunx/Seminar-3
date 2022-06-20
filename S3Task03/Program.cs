@@ -5,3 +5,11 @@
 using System;
 using static System.Console;
 Clear();
+
+WriteLine("Введите число: ");
+int number = int.Parse(ReadLine());
+
+for (int i = 1; i <= number; i++)
+{
+    WriteLine($"{Math.Pow(i, 3)}");
+}
